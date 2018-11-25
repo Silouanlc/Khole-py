@@ -3,12 +3,6 @@ import sys
 import argparse
 import csv
 
-#------------------
-#
-# OPTIONS
-#
-#------------------
-
 parser = argparse.ArgumentParser(conflict_handler='resolve')
 parser.add_argument("-l" ,"--list", help="affiche les lits", action="store_true")
 parser.add_argument("-a" , "--add", nargs="*", type=int, help="affiche les lits")
@@ -21,12 +15,6 @@ parser.add_argument("-t" , "--trieeee", help="on affiche la liste en croissant",
 parser.add_argument("-t" , "--desc", help="on affiche la liste en croissant", action="store_true")
 parser.add_argument("-h" , "--help", help="on affiche le help", action="store_true")
 args = parser.parse_args()
-
-#------------------
-#
-# PROGRAM
-#
-#------------------
 
 if args.list:
     print ('on lit le csv')
